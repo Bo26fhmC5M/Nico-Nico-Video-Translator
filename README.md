@@ -1,3 +1,21 @@
+## Notice
+
+**This is an unofficial fork that addresses the "Error: queryA ENOTFOUND nmsg.nicovideo.jp" issue by updating the message server endpoint.**
+
+### Key Changes:
+- Updated comment server from `nmsg.nicovideo.jp` to `public.nvcomment.nicovideo.jp`
+
+### Disclaimer:
+- This fork is **not officially supported** by the original developer
+- **No warranty** is provided for functionality or compatibility
+- Use at your own risk - functionality may differ from the original version
+
+### Troubleshooting:
+If you encounter Papago translation errors, try reducing the chunk size:
+- Find the line: `for (var strlength = 0; strlength < 3000 && count != chats.length;)`
+- Change `3000` to `2000` to reduce the text length per API request
+---
+
 # 니코니코 동화 번역기
 
 제작과정의 자세한 내용은 아래의 링크를 참고해주세요.
